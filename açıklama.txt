@@ -1,0 +1,9 @@
+Kodu GitHub'da buldum (pioneerhfy) linki= https://github.com/heikipikker/IcmpiFlood/blob/master/IcmpiFlood.py  
+orijinal yapısını bozmamak için sadece Python 3'teki print fonksiyonu farklılıklarını düzelttim. 
+Ayrıca verimliliği artırmak için multiprocessing yapısını da olduğu gibi korudum.
+Ağ paketlerini düşük seviyede manipüle edebilmek için Scapy kütüphanesini kullandım.
+Saldırıyı güvenli bir ortamda test etmek için hedef olarak kendi yerel adresimi (127.0.0.1) belirledim. 
+Terminale python icmp_flood_kod.py(kendi dosya adım) 127.0.0.1 yazarak kodu çalıştırdım ve saldırı başladı.
+Wireshark üzerinden Loopback trafiğini izleyerek, saniyede binlerce ICMP paketinin başarıyla oluşturulup hedefe gönderildiğini canlı olarak doğruladım.
+SONUÇ: Bu çalışma ile bir ağ protokolünün (ICMP) kötü niyetli kullanımda sistem kaynaklarını nasıl felç edebileceğini 
+ve siber güvenlikte 'kaba kuvvet' (brute force) temelli ağ saldırılarının mantığını uygulamalı olarak kavradım.
